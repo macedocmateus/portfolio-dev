@@ -1,0 +1,67 @@
+:root {
+   --accent-color-red: #e3646e;
+   --accent-color-purple: #bb72e9;
+   --accent-color-blue: #3996db;
+   --accent-color-green: #82bc4f;
+   --accent-color-yellow: #eabd5f;
+
+   --gray-scale-100:#e2e4e9;
+   --gray-scale-200:#c0c4ce;
+   --gray-scale-300:#878ea1;
+   --gray-scale-400:#292c34;
+   --gray-scale-500:#16181d;
+   --gray-scale-600:#0d0e11;
+
+   --font-title-lg: 700 3.5rem/1.2 'Asap', sans-serif;
+   --font-title-md: 700 1.5rem/1.2 'Asap', sans-serif;
+   --font-title-sm: 700 1rem/1.2 'Asap', sans-serif;
+
+   --font-subtitle: 400 1.25rem/1.2 'Inconsolata', sans-serif;
+
+   --font-text-md: 400 1rem/1.4 'Maven Pro', sans-serif;
+   --font-text-sm: 400 0.875rem/1.4 'Maven Pro', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
