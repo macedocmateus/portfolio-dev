@@ -65,3 +65,101 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+.container {
+    min-height: 100dvh;
+    background-color: var(--gray-scale-500);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46.875rem;
+    background-image: url("./assets/images/Background_Intro.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-wrapper {
+  display: flex;
+  max-width: 65rem;
+  padding: 7.5rem 10.25rem 11.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.avatar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3.5rem;
+}
+
+.avatar-description h1 {
+  margin-block: 0.5rem 1.25rem;
+}
+
+.avatar-description p {
+  font: var(--font-subtitle);
+  color: var(--gray-scale-200);
+}
+
+.avatar-description .name {
+  font: var(--font-subtitle);
+  color: #e3646e;
+}
+
+.avatar-description h1 {
+  font: var(--font-title-lg);
+  color: var(--gray-scale-100);
+}
+
+.avatar-description span {
+  font: var(--font-text-sm);
+  color: var(--gray-scale-300);
+}
+
+.tags-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.tags-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font: var(--font-text-md);
+  color: var(--gray-scale-200);
+  padding: 0.5rem 1rem;
+  background-color: var(--gray-scale-400);
+  border-radius: 0.5rem;
+  
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tags-icon img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.jobs {
+    height: 30rem;
+    background-color: #0d0e11;
+}
+
+.contacts {
+    height: 49.25rem;
+    background-image: url("./assets/images/Background_Contacts.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
