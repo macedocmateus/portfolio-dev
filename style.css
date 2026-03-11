@@ -207,8 +207,61 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jobs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
     height: 30rem;
+    padding: 5.5rem 7.5rem 7.5rem 7.5rem;
     background-color: #0d0e11;
+}
+
+.jobs-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.jobs-header span {
+  font: var(--font-subtitle);
+  color: var(--accent-color-red);
+}
+
+.jobs-header h2 {
+  font: var(--font-title-md);
+  color: var(--gray-scale-100);
+}
+
+.jobs-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 17.5rem));
+  gap: 1.5rem;
+}
+
+.job-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--gray-scale-500);
+  border-radius: 0.5rem;
+}
+
+.job-description div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.job-description div h3 {
+  font: var(--font-title-sm);
+  color: var(--gray-scale-100);
+}
+
+.job-description div p {
+  font: var(--font-text-sm);
+  color: var(--gray-scale-200);
 }
 
 .contacts {
