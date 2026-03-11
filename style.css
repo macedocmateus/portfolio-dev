@@ -265,9 +265,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
     height: 49.25rem;
+    padding: 8rem 7.5rem 12.5rem;
     background-image: url("./assets/images/Background_Contacts.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.contacts-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contacts-header span {
+  font: var(--font-subtitle);
+  color: var(--accent-color-purple);
+}
+.contacts-header h2 {
+  font: var(--font-title-md);
+  color: var(--gray-scale-100);
+}
+.contacts-header p {
+  font: var(--font-text-md);
+  color: var(--gray-scale-200);
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 25rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--gray-scale-400);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font: var(--font-text-md);
+  color: var(--gray-scale-200);
+}
+
+.contact-item img + img {
+  margin-left: auto;
 }
